@@ -1,0 +1,1077 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "99,digit,is,what": {
+            "intent": "what is 99 digits",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "who.are you",
+            "domain": "default"
+          },
+          "99digit,ceo,is,of,the,who": {
+            "intent": "who.is ceo",
+            "domain": "default"
+          },
+          "99,digit,is,of,owner,the,who": {
+            "intent": "who.is owner",
+            "domain": "default"
+          },
+          "develop,how,mani": {
+            "intent": "how many.developer",
+            "domain": "default"
+          },
+          "99,digit,give,link,me,of": {
+            "intent": "give me.link",
+            "domain": "default"
+          },
+          "about,breaf,compani,give,me,the": {
+            "intent": "give me.breaf",
+            "domain": "default"
+          },
+          "ok,thank,you": {
+            "intent": "thank.you",
+            "domain": "default"
+          },
+          "99,digit,give,locat,me,of": {
+            "intent": "location of.99digits",
+            "domain": "default"
+          },
+          "is,who,yadu": {
+            "intent": "who.yadu",
+            "domain": "default"
+          },
+          "is,sanju,who": {
+            "intent": "who.sanju",
+            "domain": "default"
+          },
+          "99digit,doe,have,how,mani,year": {
+            "intent": "how many years.99digits have",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.hello": "default",
+          "what is 99 digits": "default",
+          "who.are you": "default",
+          "who.is ceo": "default",
+          "who.is owner": "default",
+          "how many.developer": "default",
+          "give me.link": "default",
+          "give me.breaf": "default",
+          "thank.you": "default",
+          "location of.99digits": "default",
+          "who.yadu": "default",
+          "who.sanju": "default",
+          "how many years.99digits have": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is 99 digits",
+            "intent": "what is 99 digits"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you",
+            "intent": "who.are you"
+          },
+          {
+            "domain": "default",
+            "utterance": "who is the ceo of 99digits",
+            "intent": "who.is ceo"
+          },
+          {
+            "domain": "default",
+            "utterance": "who is the  owner of 99 digits",
+            "intent": "who.is owner"
+          },
+          {
+            "domain": "default",
+            "utterance": "how many developers",
+            "intent": "how many.developer"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me link of 99 digits",
+            "intent": "give me.link"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me breaf about the company ",
+            "intent": "give me.breaf"
+          },
+          {
+            "domain": "default",
+            "utterance": "ok thank you",
+            "intent": "thank.you"
+          },
+          {
+            "domain": "default",
+            "utterance": "give me location of 99 Digits",
+            "intent": "location of.99digits"
+          },
+          {
+            "domain": "default",
+            "utterance": "who is yadu",
+            "intent": "who.yadu"
+          },
+          {
+            "domain": "default",
+            "utterance": "who is sanju",
+            "intent": "who.sanju"
+          },
+          {
+            "domain": "default",
+            "utterance": "how many years does 99digits have",
+            "intent": "how many years.99digits have"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "99": 1,
+              "hello": 1,
+              "what": 1,
+              "is": 1,
+              "digit": 1,
+              "who": 1,
+              "are": 1,
+              "you": 1,
+              "the": 1,
+              "ceo": 1,
+              "of": 1,
+              "99digit": 1,
+              "owner": 1,
+              "how": 1,
+              "mani": 1,
+              "develop": 1,
+              "give": 1,
+              "me": 1,
+              "link": 1,
+              "breaf": 1,
+              "about": 1,
+              "compani": 1,
+              "ok": 1,
+              "thank": 1,
+              "locat": 1,
+              "yadu": 1,
+              "sanju": 1,
+              "year": 1,
+              "doe": 1,
+              "have": 1
+            },
+            "intents": {
+              "greetings.hello": 1,
+              "what is 99 digits": 1,
+              "who.are you": 1,
+              "who.is ceo": 1,
+              "who.is owner": 1,
+              "how many.developer": 1,
+              "give me.link": 1,
+              "give me.breaf": 1,
+              "thank.you": 1,
+              "location of.99digits": 1,
+              "who.yadu": 1,
+              "who.sanju": 1,
+              "how many years.99digits have": 1
+            },
+            "intentFeatures": {
+              "greetings.hello": {
+                "hello": 1
+              },
+              "what is 99 digits": {
+                "99": 1,
+                "what": 1,
+                "is": 1,
+                "digit": 1
+              },
+              "who.are you": {
+                "who": 1,
+                "are": 1,
+                "you": 1
+              },
+              "who.is ceo": {
+                "who": 1,
+                "is": 1,
+                "the": 1,
+                "ceo": 1,
+                "of": 1,
+                "99digit": 1
+              },
+              "who.is owner": {
+                "99": 1,
+                "who": 1,
+                "is": 1,
+                "the": 1,
+                "owner": 1,
+                "of": 1,
+                "digit": 1
+              },
+              "how many.developer": {
+                "how": 1,
+                "mani": 1,
+                "develop": 1
+              },
+              "give me.link": {
+                "99": 1,
+                "give": 1,
+                "me": 1,
+                "link": 1,
+                "of": 1,
+                "digit": 1
+              },
+              "give me.breaf": {
+                "give": 1,
+                "me": 1,
+                "breaf": 1,
+                "about": 1,
+                "the": 1,
+                "compani": 1
+              },
+              "thank.you": {
+                "ok": 1,
+                "thank": 1,
+                "you": 1
+              },
+              "location of.99digits": {
+                "99": 1,
+                "give": 1,
+                "me": 1,
+                "locat": 1,
+                "of": 1,
+                "digit": 1
+              },
+              "who.yadu": {
+                "who": 1,
+                "is": 1,
+                "yadu": 1
+              },
+              "who.sanju": {
+                "who": 1,
+                "is": 1,
+                "sanju": 1
+              },
+              "how many years.99digits have": {
+                "how": 1,
+                "mani": 1,
+                "year": 1,
+                "doe": 1,
+                "99digit": 1,
+                "have": 1
+              }
+            },
+            "featuresToIntent": {
+              "99": [
+                "what is 99 digits",
+                "who.is owner",
+                "give me.link",
+                "location of.99digits"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "what": [
+                "what is 99 digits"
+              ],
+              "is": [
+                "what is 99 digits",
+                "who.is ceo",
+                "who.is owner",
+                "who.yadu",
+                "who.sanju"
+              ],
+              "digit": [
+                "what is 99 digits",
+                "who.is owner",
+                "give me.link",
+                "location of.99digits"
+              ],
+              "who": [
+                "who.are you",
+                "who.is ceo",
+                "who.is owner",
+                "who.yadu",
+                "who.sanju"
+              ],
+              "are": [
+                "who.are you"
+              ],
+              "you": [
+                "who.are you",
+                "thank.you"
+              ],
+              "the": [
+                "who.is ceo",
+                "who.is owner",
+                "give me.breaf"
+              ],
+              "ceo": [
+                "who.is ceo"
+              ],
+              "of": [
+                "who.is ceo",
+                "who.is owner",
+                "give me.link",
+                "location of.99digits"
+              ],
+              "99digit": [
+                "who.is ceo",
+                "how many years.99digits have"
+              ],
+              "owner": [
+                "who.is owner"
+              ],
+              "how": [
+                "how many.developer",
+                "how many years.99digits have"
+              ],
+              "mani": [
+                "how many.developer",
+                "how many years.99digits have"
+              ],
+              "develop": [
+                "how many.developer"
+              ],
+              "give": [
+                "give me.link",
+                "give me.breaf",
+                "location of.99digits"
+              ],
+              "me": [
+                "give me.link",
+                "give me.breaf",
+                "location of.99digits"
+              ],
+              "link": [
+                "give me.link"
+              ],
+              "breaf": [
+                "give me.breaf"
+              ],
+              "about": [
+                "give me.breaf"
+              ],
+              "compani": [
+                "give me.breaf"
+              ],
+              "ok": [
+                "thank.you"
+              ],
+              "thank": [
+                "thank.you"
+              ],
+              "locat": [
+                "location of.99digits"
+              ],
+              "yadu": [
+                "who.yadu"
+              ],
+              "sanju": [
+                "who.sanju"
+              ],
+              "year": [
+                "how many years.99digits have"
+              ],
+              "doe": [
+                "how many years.99digits have"
+              ],
+              "have": [
+                "how many years.99digits have"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hello",
+                "99",
+                "what",
+                "is",
+                "digit",
+                "who",
+                "are",
+                "you",
+                "the",
+                "ceo",
+                "of",
+                "99digit",
+                "owner",
+                "how",
+                "mani",
+                "develop",
+                "give",
+                "me",
+                "link",
+                "breaf",
+                "about",
+                "compani",
+                "ok",
+                "thank",
+                "locat",
+                "yadu",
+                "sanju",
+                "year",
+                "doe",
+                "have"
+              ],
+              "intents": [
+                "greetings.hello",
+                "what is 99 digits",
+                "who.are you",
+                "who.is ceo",
+                "who.is owner",
+                "how many.developer",
+                "give me.link",
+                "give me.breaf",
+                "thank.you",
+                "location of.99digits",
+                "who.yadu",
+                "who.sanju",
+                "how many years.99digits have"
+              ],
+              "perceptrons": [
+                [
+                  10.762863159179688,
+                  -0.69228196144104,
+                  -0.4307176172733307,
+                  -1.35195791721344,
+                  -0.69228196144104,
+                  -1.383005976676941,
+                  -0.46185439825057983,
+                  -1.3502124547958374,
+                  -0.5371317863464355,
+                  -0.0633862093091011,
+                  -0.34121790528297424,
+                  -0.29266083240509033,
+                  -0.013867885805666447,
+                  -1.1141128540039062,
+                  -1.1141128540039062,
+                  -0.8985787630081177,
+                  -0.6652495861053467,
+                  -0.6652495861053467,
+                  -0.1385805755853653,
+                  -0.42991915345191956,
+                  -0.42991915345191956,
+                  -0.42991915345191956,
+                  -0.8877037167549133,
+                  -0.8877037167549133,
+                  -0.09508182108402252,
+                  -0.4143635630607605,
+                  -0.3965262174606323,
+                  -0.2122415453195572,
+                  -0.2122415453195572,
+                  -0.2122415453195572,
+                  3.155600325977638
+                ],
+                [
+                  -0.39223724603652954,
+                  2.7680587768554688,
+                  5.504231929779053,
+                  2.8259568214416504,
+                  2.7680587768554688,
+                  -2.7402780055999756,
+                  -0.04397488757967949,
+                  -0.19659414887428284,
+                  -1.6491115093231201,
+                  -0.10182523727416992,
+                  -2.8886919021606445,
+                  -0.14064918458461761,
+                  -1.4970864057540894,
+                  -0.16169953346252441,
+                  -0.16169953346252441,
+                  -0.1529218852519989,
+                  -1.2394875288009644,
+                  -1.2394875288009644,
+                  -0.6533084511756897,
+                  -0.000012964270354132168,
+                  -0.000012964270354132168,
+                  -0.000012964270354132168,
+                  -0.13511396944522858,
+                  -0.13511396944522858,
+                  -0.583394467830658,
+                  -0.5263451337814331,
+                  -0.5022541880607605,
+                  -0.006547675002366304,
+                  -0.006547675002366304,
+                  -0.006547675002366304,
+                  0.4145804231299996
+                ],
+                [
+                  -0.33650675415992737,
+                  -0.24332542717456818,
+                  0,
+                  -2.765258550643921,
+                  -0.24332542717456818,
+                  3.529536724090576,
+                  6.290913105010986,
+                  4.0874152183532715,
+                  -0.6025025844573975,
+                  -0.28350630402565,
+                  -0.5707595348358154,
+                  -0.31582996249198914,
+                  -0.22100727260112762,
+                  -0.222421333193779,
+                  -0.222421333193779,
+                  -0.1946498602628708,
+                  -0.05767395719885826,
+                  -0.05767395719885826,
+                  -0.010409222915768623,
+                  -0.0387018620967865,
+                  -0.0387018620967865,
+                  -0.0387018620967865,
+                  -2.2057290077209473,
+                  -2.2057290077209473,
+                  0,
+                  -1.1070441007614136,
+                  -1.0897672176361084,
+                  -0.018644968047738075,
+                  -0.018644968047738075,
+                  -0.018644968047738075,
+                  0.341242138211583
+                ],
+                [
+                  -0.010191651061177254,
+                  -2.004622459411621,
+                  -0.00910581648349762,
+                  0.7384219169616699,
+                  -2.004622459411621,
+                  0.5753772258758545,
+                  -0.16606231033802032,
+                  -0.21227702498435974,
+                  2.344759225845337,
+                  4.550013065338135,
+                  2.5625457763671875,
+                  3.8692452907562256,
+                  -1.858678936958313,
+                  -0.7351812720298767,
+                  -0.7351812720298767,
+                  -0.03767896816134453,
+                  -0.47481638193130493,
+                  -0.47481638193130493,
+                  -0.06564386934041977,
+                  -0.3463703393936157,
+                  -0.3463703393936157,
+                  -0.3463703393936157,
+                  -0.031094273552298546,
+                  -0.031094273552298546,
+                  -0.020636634901165962,
+                  -0.9775570034980774,
+                  -0.9556884169578552,
+                  -0.680905818939209,
+                  -0.680905818939209,
+                  -0.680905818939209,
+                  -0.35601879833598027
+                ],
+                [
+                  -0.006991508416831493,
+                  1.8521404266357422,
+                  -2.2023420333862305,
+                  -0.3036477863788605,
+                  1.8521404266357422,
+                  1.671645998954773,
+                  -0.22999460995197296,
+                  -0.2691347897052765,
+                  3.101717233657837,
+                  -2.4414873123168945,
+                  1.6138166189193726,
+                  -2.4495246410369873,
+                  5.638213634490967,
+                  -0.05720311403274536,
+                  -0.05720311403274536,
+                  -0.04475235193967819,
+                  -1.6784299612045288,
+                  -1.6784299612045288,
+                  -0.7896342277526855,
+                  -0.06680633872747421,
+                  -0.06680633872747421,
+                  -0.06680633872747421,
+                  -0.02913784235715866,
+                  -0.02913784235715866,
+                  -0.7938376069068909,
+                  -0.6024656295776367,
+                  -0.6495325565338135,
+                  -0.004198362119495869,
+                  -0.004198362119495869,
+                  -0.004198362119495869,
+                  -1.1677790130283294
+                ],
+                [
+                  -0.8528941869735718,
+                  -0.22117768228054047,
+                  -0.08597753942012787,
+                  -0.4206688404083252,
+                  -0.22117768228054047,
+                  -0.4377647042274475,
+                  -0.10315873473882675,
+                  -0.40107035636901855,
+                  -0.12643283605575562,
+                  -0.002098692813888192,
+                  -0.12607111036777496,
+                  -2.106623888015747,
+                  0,
+                  3.755704402923584,
+                  3.755704402923584,
+                  5.857200622558594,
+                  -0.25826576352119446,
+                  -0.25826576352119446,
+                  -0.07604718953371048,
+                  -0.12212876230478287,
+                  -0.12212876230478287,
+                  -0.12212876230478287,
+                  -0.2948177456855774,
+                  -0.2948177456855774,
+                  -0.027489816769957542,
+                  -0.17205192148685455,
+                  -0.1550988256931305,
+                  -2.1026203632354736,
+                  -2.1026203632354736,
+                  -2.1026203632354736,
+                  0.90494250030398
+                ],
+                [
+                  -0.03126874566078186,
+                  0.9268056154251099,
+                  -0.6496098637580872,
+                  -1.199154257774353,
+                  0.9268056154251099,
+                  -0.5611504912376404,
+                  -0.006255839951336384,
+                  -0.08663105964660645,
+                  -1.1541035175323486,
+                  -0.02973255328834057,
+                  1.5198673009872437,
+                  -0.06742997467517853,
+                  -0.443331778049469,
+                  -0.027853265404701233,
+                  -0.027853265404701233,
+                  -0.0028945303056389093,
+                  1.3693366050720215,
+                  1.3693366050720215,
+                  7.856894016265869,
+                  -0.6285029053688049,
+                  -0.6285029053688049,
+                  -0.6285029053688049,
+                  -0.07388177514076233,
+                  -0.07388177514076233,
+                  -5.845553398132324,
+                  -0.013552786782383919,
+                  -0.011530407704412937,
+                  -0.020356884226202965,
+                  -0.020356884226202965,
+                  -0.020356884226202965,
+                  -0.002130618461372911
+                ],
+                [
+                  -0.2924032509326935,
+                  -1.0977404117584229,
+                  -0.008192252367734909,
+                  -0.4392399787902832,
+                  -1.0977404117584229,
+                  -0.46610039472579956,
+                  -0.028880834579467773,
+                  -0.17728953063488007,
+                  2.3922760486602783,
+                  -0.2582240402698517,
+                  -1.3712207078933716,
+                  -0.3290466368198395,
+                  -0.043764207512140274,
+                  -0.15162137150764465,
+                  -0.15162137150764465,
+                  -0.08204112946987152,
+                  1.6957619190216064,
+                  1.6957619190216064,
+                  -0.4153011441230774,
+                  2.7347474098205566,
+                  2.7347474098205566,
+                  2.7347474098205566,
+                  -0.13333845138549805,
+                  -0.13333845138549805,
+                  -0.5335664749145508,
+                  -0.039573170244693756,
+                  -0.032589323818683624,
+                  -0.056498341262340546,
+                  -0.056498341262340546,
+                  -0.056498341262340546,
+                  0.29749731384536776
+                ],
+                [
+                  -0.7486044764518738,
+                  -0.25310051441192627,
+                  -0.11343565583229065,
+                  -0.3654140532016754,
+                  -0.25310051441192627,
+                  -2.1341757774353027,
+                  -1.8826416730880737,
+                  3.2492387294769287,
+                  -0.1159786507487297,
+                  -0.007282076869159937,
+                  -0.1416771560907364,
+                  -0.1553875207901001,
+                  0,
+                  -0.33535635471343994,
+                  -0.33535635471343994,
+                  -0.17938363552093506,
+                  -0.24221260845661163,
+                  -0.24221260845661163,
+                  -0.015166074968874454,
+                  -0.10202275961637497,
+                  -0.10202275961637497,
+                  -0.10202275961637497,
+                  5.131749629974365,
+                  5.131749629974365,
+                  -0.10208860039710999,
+                  -0.11395488679409027,
+                  -0.07884299755096436,
+                  -0.14101345837116241,
+                  -0.14101345837116241,
+                  -0.14101345837116241,
+                  0.7689324069333101
+                ],
+                [
+                  -0.1033976823091507,
+                  0.8961706757545471,
+                  -0.5842330455780029,
+                  -1.3208091259002686,
+                  0.8961706757545471,
+                  -0.7274987697601318,
+                  -0.024807332083582878,
+                  -0.03027411364018917,
+                  -1.2105188369750977,
+                  -0.053777579218149185,
+                  1.4145549535751343,
+                  -0.12028252333402634,
+                  -0.524406373500824,
+                  -0.08096116781234741,
+                  -0.08096116781234741,
+                  -0.019845010712742805,
+                  1.4892603158950806,
+                  1.4892603158950806,
+                  -5.792740821838379,
+                  -0.5662016272544861,
+                  -0.5662016272544861,
+                  -0.5662016272544861,
+                  -0.0010786504717543721,
+                  -0.0010786504717543721,
+                  7.863638401031494,
+                  -0.025415297597646713,
+                  -0.021827438846230507,
+                  -0.04532948508858681,
+                  -0.04532948508858681,
+                  -0.04532948508858681,
+                  -0.03453196720331059
+                ],
+                [
+                  -0.3643639087677002,
+                  -1.0586837530136108,
+                  -0.7199240922927856,
+                  2.4677019119262695,
+                  -1.0586837530136108,
+                  2.0092742443084717,
+                  -1.1779295206069946,
+                  -1.1972821950912476,
+                  -1.360512375831604,
+                  -1.0217108726501465,
+                  -1.3604711294174194,
+                  -1.091599464416504,
+                  -0.31296345591545105,
+                  -0.14742468297481537,
+                  -0.14742468297481537,
+                  -0.0775362104177475,
+                  -0.000020650499209295958,
+                  -0.000020650499209295958,
+                  0,
+                  -0.000020650499209295958,
+                  -0.000020650499209295958,
+                  -0.000020650499209295958,
+                  -0.013187901116907597,
+                  -0.013187901116907597,
+                  0,
+                  9.062589645385742,
+                  -4.524417400360107,
+                  -0.046761658042669296,
+                  -0.046761658042669296,
+                  -0.046761658042669296,
+                  0.37427991875970595
+                ],
+                [
+                  -0.37860989570617676,
+                  -1.095163106918335,
+                  -0.6801444888114929,
+                  2.494597911834717,
+                  -1.095163106918335,
+                  2.0034070014953613,
+                  -1.1715863943099976,
+                  -1.2067490816116333,
+                  -1.4150668382644653,
+                  -0.9958023428916931,
+                  -1.4108293056488037,
+                  -1.078818678855896,
+                  -0.38057881593704224,
+                  -0.1689070612192154,
+                  -0.1689070612192154,
+                  -0.08601824939250946,
+                  -0.002214912325143814,
+                  -0.002214912325143814,
+                  0,
+                  -0.002214912325143814,
+                  -0.002214912325143814,
+                  -0.002214912325143814,
+                  -0.028368961066007614,
+                  -0.028368961066007614,
+                  0,
+                  -4.46545934677124,
+                  9.06490421295166,
+                  -0.055076032876968384,
+                  -0.055076032876968384,
+                  -0.055076032876968384,
+                  0.37137180513956825
+                ],
+                [
+                  -0.20606130361557007,
+                  -0.12186423689126968,
+                  -0.07318975776433945,
+                  -0.5958014130592346,
+                  -0.12186423689126968,
+                  -0.6091755032539368,
+                  -0.08122626692056656,
+                  -0.17635884881019592,
+                  -0.527024507522583,
+                  -0.47288575768470764,
+                  -0.5147485733032227,
+                  2.672499656677246,
+                  -0.006578509695827961,
+                  1.0624539852142334,
+                  1.0624539852142334,
+                  -2.105527877807617,
+                  -0.057778436690568924,
+                  -0.057778436690568924,
+                  -0.015706023201346397,
+                  -0.026856781914830208,
+                  -0.026856781914830208,
+                  -0.026856781914830208,
+                  -0.070924773812294,
+                  -0.070924773812294,
+                  -0.003529826644808054,
+                  -0.005438236054033041,
+                  -0.00314436131156981,
+                  3.168203115463257,
+                  3.168203115463257,
+                  3.168203115463257,
+                  -0.01694352600829698
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "what is 99 digits"
+      ],
+      [
+        "en",
+        "who are you"
+      ],
+      [
+        "en",
+        "who is the ceo of 99digits"
+      ],
+      [
+        "en",
+        "who is the  owner of 99 digits"
+      ],
+      [
+        "en",
+        "how many developers"
+      ],
+      [
+        "en",
+        "give me link of 99 digits"
+      ],
+      [
+        "en",
+        "give me breaf about the company "
+      ],
+      [
+        "en",
+        "ok thank you"
+      ],
+      [
+        "en",
+        "give me location of 99 Digits"
+      ],
+      [
+        "en",
+        "who is yadu"
+      ],
+      [
+        "en",
+        "who is sanju"
+      ],
+      [
+        "en",
+        "how many years does 99digits have"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.hello": [
+          {
+            "answer": "Hello! How can I assist you?"
+          }
+        ],
+        "what is 99 digits": [
+          {
+            "answer": "99Digits has built its reputation upon customer satisfaction, collaboration, innovation, value for money and reliable, safe delivery of its products and services. This has led to repeat business and the creation of long lasting trusting relationships with our clients. 99Digits  is a board-managed professional company, committed to creating enduring value for the nation and the shareholder. It has a rich organisational culture rooted in its core values of respect for people and belief in empowerment. Its philosophy of all-round value creation is backed by strong corporate governance policies and systems."
+          }
+        ],
+        "who.are you": [
+          {
+            "answer": "hey Iam personal Ai Chat Assistant from 99Digits"
+          }
+        ],
+        "who.is ceo": [
+          {
+            "answer": "the ceo of 99Digits is Reshma B"
+          }
+        ],
+        "who.is owner": [
+          {
+            "answer": "The owner and director of 99digits is RAJEEV R"
+          }
+        ],
+        "how many.developer": [
+          {
+            "answer": "There are 40+ Developers woking in 99 Digits"
+          }
+        ],
+        "give me.link": [
+          {
+            "answer": "Sure you can visite here https://99digits.com/"
+          }
+        ],
+        "give me.breaf": [
+          {
+            "answer": "We are an AI-integrated leading IT Services, Consulting, Digital Marketing, and Branding Solutions company committed to empowering businesses to thrive in the ever-evolving digital landscape. Leveraging our cutting-edge technologies and innovative AI-driven strategies, we enable our clients to surpass their goals and maintain a competitive edge. With our AI-integrated approach, we offer a seamless and intelligent solution that optimizes business performance and ensures sustained success in the digital era"
+          }
+        ],
+        "ok.thank you": [
+          {
+            "answer": "you are welcome Happy to Help any time"
+          }
+        ],
+        "location of.99digits": [
+          {
+            "answer": "sure you can Navigate this Location\nhttps://www.google.com/maps/place/99+Digits/@8.5280772,76.9392462,19.08z/\ndata=!4m6!3m5!1s0xac3e9f0c60aec34d:0x4d6fc7217205d2c5!8m2!\n3d8.5279774!4d76.939125!16s%2Fg%2F11sdnnjswk?entry=ttu"
+          }
+        ],
+        "who.yadu": [
+          {
+            "answer": "yadu is one of the MERN stack Fullstack Developer in 99 Digits who have mastered in Javascript,TypeScript,MongoDB,and NOdejs"
+          }
+        ],
+        "who.sanju": [
+          {
+            "answer": "sanju is one of the Flutter Developer in 99 Digits"
+          }
+        ],
+        "how many years.99digits have": [
+          {
+            "answer": "99 Digits have 10+ Year of Expreance"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
